@@ -1,0 +1,16 @@
+<h1>Search Result</h1>
+
+<div class="row">
+    {% for post in post %}
+    <div class="column1" style="background-color:rgb(218, 216, 216);">
+        <div style="display: flex;">
+            <h2>{{post.name}} </h2>
+            <p style="margin-left: 100px;">{{post.created}}</p>
+        </div>
+        <p>{{post.post_desc}}</p>
+        
+    </div>
+    
+    <hr>
+
+    {% endfor %}

@@ -1,0 +1,33 @@
+body{
+    background-color:#3faaf7;
+}
+.container{
+    background-color:#f7f7f7;
+    width: 20%;
+    margin: 0px auto;
+}
+.first{
+    display: inline-grid;
+    margin: 20px;
+}
+.second{
+    display: inline-grid;
+    margin: 20px;
+}
+.btn{
+    display: flex;
+    margin: 21px;
+}
+h1{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top: 7%;
+    color: #00ffa9;
+}
+p{
+    text-align: center;
+}
+p a{
+    text-decoration: none;
+    color: #af0000;
+}

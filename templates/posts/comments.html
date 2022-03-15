@@ -1,0 +1,30 @@
+
+
+
+<form method="post">
+    {% csrf_token %}
+    {{form.labels}}
+    {{form.as_p}}
+    <input type="submit" value="Drop">
+</form>
+<br>
+<br>
+<h2>All Comments</h2>
+<div class="row">
+    <hr>
+    {% for comment in comments %}
+    <div class="column">
+      <div class="card">
+        <h3>{{comment.name__username}}</h3>
+        <small>Commented On {{comment.post}}</small>
+        <p>{{comment.body}}</p>
+        <p>Some text</p>
+      </div>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+
+{% for comment in comments %}
+{{comment.}}
+{% endfor %}

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <h1>Intellial</h1>
+    <div class="container">
+    <form method="post">
+        {% csrf_token %}
+        <div class="first">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Username">
+        </div><br>
+        <div class="second">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="btn">
+        <input style="width: 20%;" type="submit" value="LOGIN">
+    </div>
+    </form>
+    </div>
+    <p>Dont't Have Account?? <a href="{% url 'posts:register' %}">Register</a></p>
+</body>
+
+</html>
